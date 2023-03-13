@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\controladorEjercicio1;
+use App\Http\Controllers\controladorEjercicio2;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/ej1', [controladorEjercicio1::class, 'ej1Parametro']);
+
+Route::get('/ej12/{ej12}', [controladorEjercicio1::class, 'ej1Parametro2']);
+
+Route::get('/ej123/{ej123}',[controladorEjercicio1::class, 'ej1Parametro3']);
+
+// Route::get('/ej2/{uno}/{dos}/{tres}/{cuatro}', [controladorEjercicio2::class, 'ej2tres']);
