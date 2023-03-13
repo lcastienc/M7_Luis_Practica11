@@ -25,4 +25,4 @@ Route::get('/ej12/{ej12}', [controladorEjercicio1::class, 'ej1Parametro2']);
 
 Route::get('/ej123/{ej123}',[controladorEjercicio1::class, 'ej1Parametro3']);
 
-// Route::get('/ej2/{uno}/{dos}/{tres}/{cuatro}', [controladorEjercicio2::class, 'ej2tres']);
+Route::get('/ej2/{uno}/{dos}/{tres}/{cuatro}', [controladorEjercicio2::class, 'ej2tres']);
